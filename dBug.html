@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>Interactive Image Gallery</h1>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="Images/Image1.jpeg" alt="Image 1" class="gallery-img" data-title="Beautiful Landscape" data-description="A beautiful view of a landscape.">
+            </div>
+            <div class="gallery-item">
+                <img src="Images/Images2.jpeg" alt="Image 2" class="gallery-img" data-title="Ocean Breeze" data-description="A calm ocean view at sunset.">
+            </div>
+            <!-- Add more gallery items -->
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="caption" id="captionText"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
